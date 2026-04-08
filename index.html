@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>接单侠 · 技能在线接单平台</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['"Space Grotesk"', 'system-ui', 'sans-serif'],
+            body: ['"Noto Sans SC"', 'system-ui', 'sans-serif'],
+          },
+          boxShadow: {
+            brutal: '6px 6px 0 0 #000',
+            'brutal-sm': '4px 4px 0 0 #000',
+            'brutal-lg': '8px 8px 0 0 #000',
+          },
+        },
+      },
+    };
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;600;700;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    body { font-family: 'Noto Sans SC', system-ui, sans-serif; }
+    .font-display { font-family: 'Space Grotesk', 'Noto Sans SC', sans-serif; }
+  </style>
+</head>
+<body class="min-h-screen bg-amber-100 text-neutral-900 antialiased">
+  <!-- Nav -->
+  <header class="sticky top-0 z-50 border-b-4 border-black bg-lime-300">
+    <div class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 px-4 py-4 md:px-6">
+      <a href="index.html" class="font-display flex items-center gap-2 text-xl font-bold tracking-tight md:text-2xl">
+        <span class="flex h-10 w-10 items-center justify-center border-4 border-black bg-fuchsia-400 shadow-brutal-sm">
+          <i class="fa-solid fa-bolt text-black"></i>
+        </span>
+        接单侠
+      </a>
+      <nav class="flex flex-wrap items-center gap-2 md:gap-3">
+        <a href="index.html" class="rounded border-2 border-black bg-white px-4 py-2 text-sm font-semibold shadow-brutal-sm transition hover:-translate-y-0.5 hover:bg-amber-200">首页</a>
+        <a href="#skills" class="rounded border-2 border-black bg-white px-4 py-2 text-sm font-semibold shadow-brutal-sm transition hover:-translate-y-0.5 hover:bg-amber-200">技能分类</a>
+        <a href="#how" class="rounded border-2 border-black bg-white px-4 py-2 text-sm font-semibold shadow-brutal-sm transition hover:-translate-y-0.5 hover:bg-amber-200">如何接单</a>
+        <a href="about.html" class="rounded border-2 border-black bg-cyan-300 px-4 py-2 text-sm font-semibold shadow-brutal-sm transition hover:-translate-y-0.5 hover:bg-cyan-200">关于我们</a>
+        <a href="#cta" class="rounded border-2 border-black bg-fuchsia-400 px-4 py-2 text-sm font-bold shadow-brutal-sm transition hover:-translate-y-0.5 hover:bg-fuchsia-300">
+          <i class="fa-solid fa-paper-plane mr-1"></i>发布需求
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="relative overflow-hidden border-b-4 border-black bg-gradient-to-br from-violet-300 via-fuchsia-200 to-amber-200 px-4 py-16 md:py-24">
+      <div class="pointer-events-none absolute -right-16 top-8 h-40 w-40 rotate-12 border-4 border-black bg-lime-300 shadow-brutal md:h-52 md:w-52"></div>
+      <div class="pointer-events-none absolute bottom-12 left-4 h-24 w-24 -rotate-6 border-4 border-black bg-cyan-300 shadow-brutal-sm"></div>
+      <div class="relative mx-auto max-w-6xl">
+        <p class="mb-4 inline-block rounded-full border-2 border-black bg-white px-4 py-1 text-sm font-bold shadow-brutal-sm">
+          <i class="fa-solid fa-star text-amber-500"></i> 新用户首单立减
+        </p>
+        <h1 class="font-display max-w-3xl text-4xl font-black leading-tight tracking-tight md:text-6xl">
+          用你的技能<br />
+          <span class="bg-black px-2 text-lime-300">在线接单</span>，立刻变现
+        </h1>
+        <p class="mt-6 max-w-xl text-lg font-medium text-neutral-800 md:text-xl">
+          设计、开发、文案、翻译、视频剪辑……一键匹配靠谱需求，平台担保交易，让才华变成收入。
+        </p>
+        <div class="mt-10 flex flex-wrap gap-4">
+          <a href="#cta" class="inline-flex items-center gap-2 rounded border-4 border-black bg-lime-300 px-8 py-4 text-lg font-bold shadow-brutal transition hover:-translate-y-1 hover:bg-lime-200">
+            <i class="fa-solid fa-rocket"></i> 开始接单
+          </a>
+          <a href="#skills" class="inline-flex items-center gap-2 rounded border-4 border-black bg-white px-8 py-4 text-lg font-bold shadow-brutal transition hover:-translate-y-1 hover:bg-neutral-50">
+            <i class="fa-solid fa-layer-group"></i> 浏览技能
+          </a>
+        </div>
+        <div class="mt-14 grid max-w-2xl grid-cols-3 gap-4 border-t-4 border-black border-dashed pt-8">
+          <div class="text-center">
+            <p class="font-display text-3xl font-black md:text-4xl">12k+</p>
+            <p class="text-sm font-semibold text-neutral-700">注册达人</p>
+          </div>
+          <div class="text-center">
+            <p class="font-display text-3xl font-black md:text-4xl">8.6k</p>
+            <p class="text-sm font-semibold text-neutral-700">完成订单</p>
+          </div>
+          <div class="text-center">
+            <p class="font-display text-3xl font-black md:text-4xl">4.9</p>
+            <p class="text-sm font-semibold text-neutral-700">平均评分</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="border-b-4 border-black bg-white px-4 py-16 md:py-20">
+      <div class="mx-auto max-w-6xl">
+        <div class="mb-12 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+          <div>
+            <h2 class="font-display text-3xl font-black md:text-5xl">热门技能分类</h2>
+            <p class="mt-2 max-w-lg font-medium text-neutral-600">选对赛道，订单自然来。</p>
+          </div>
+          <span class="inline-flex w-fit items-center gap-2 rounded border-2 border-black bg-amber-300 px-4 py-2 text-sm font-bold shadow-brutal-sm">
+            <i class="fa-solid fa-fire text-orange-600"></i> 实时更新需求
+          </span>
+        </div>
+        <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <article class="group rounded border-4 border-black bg-cyan-200 p-6 shadow-brutal transition hover:-translate-y-1">
+            <div class="mb-4 flex h-14 w-14 items-center justify-center border-4 border-black bg-white text-2xl shadow-brutal-sm">
+              <i class="fa-solid fa-code text-neutral-900"></i>
+            </div>
+            <h3 class="font-display text-xl font-bold">开发与建站</h3>
+            <p class="mt-2 text-sm font-medium text-neutral-800">前端、小程序、脚本自动化、运维部署。</p>
+            <p class="mt-4 text-xs font-bold uppercase tracking-wider text-neutral-600">均价 ¥800 起</p>
+          </article>
+          <article class="group rounded border-4 border-black bg-fuchsia-200 p-6 shadow-brutal transition hover:-translate-y-1">
+            <div class="mb-4 flex h-14 w-14 items-center justify-center border-4 border-black bg-white text-2xl shadow-brutal-sm">
+              <i class="fa-solid fa-palette"></i>
+            </div>
+            <h3 class="font-display text-xl font-bold">设计与品牌</h3>
+            <p class="mt-2 text-sm font-medium text-neutral-800">UI/UX、LOGO、海报、PPT 美化。</p>
+            <p class="mt-4 text-xs font-bold uppercase tracking-wider text-neutral-600">均价 ¥300 起</p>
+          </article>
+          <article class="group rounded border-4 border-black bg-lime-200 p-6 shadow-brutal transition hover:-translate-y-1">
+            <div class="mb-4 flex h-14 w-14 items-center justify-center border-4 border-black bg-white text-2xl shadow-brutal-sm">
+              <i class="fa-solid fa-pen-nib"></i>
+            </div>
+            <h3 class="font-display text-xl font-bold">文案与翻译</h3>
+            <p class="mt-2 text-sm font-medium text-neutral-800">公众号、SEO、多语种本地化。</p>
+            <p class="mt-4 text-xs font-bold uppercase tracking-wider text-neutral-600">均价 ¥200 起</p>
+          </article>
+          <article class="group rounded border-4 border-black bg-amber-200 p-6 shadow-brutal transition hover:-translate-y-1">
+            <div class="mb-4 flex h-14 w-14 items-center justify-center border-4 border-black bg-white text-2xl shadow-brutal-sm">
+              <i class="fa-solid fa-video"></i>
+            </div>
+            <h3 class="font-display text-xl font-bold">视频与动效</h3>
+            <p class="mt-2 text-sm font-medium text-neutral-800">剪辑、字幕、MG 动画、短视频运营。</p>
+            <p class="mt-4 text-xs font-bold uppercase tracking-wider text-neutral-600">均价 ¥500 起</p>
+          </article>
+          <article class="group rounded border-4 border-black bg-violet-200 p-6 shadow-brutal transition hover:-translate-y-1">
+            <div class="mb-4 flex h-14 w-14 items-center justify-center border-4 border-black bg-white text-2xl shadow-brutal-sm">
+              <i class="fa-solid fa-chart-line"></i>
+            </div>
+            <h3 class="font-display text-xl font-bold">数据与运营</h3>
+            <p class="mt-2 text-sm font-medium text-neutral-800">Excel、爬虫、投放策略、社群运营。</p>
+            <p class="mt-4 text-xs font-bold uppercase tracking-wider text-neutral-600">均价 ¥400 起</p>
+          </article>
+          <article class="group rounded border-4 border-black bg-orange-200 p-6 shadow-brutal transition hover:-translate-y-1">
+            <div class="mb-4 flex h-14 w-14 items-center justify-center border-4 border-black bg-white text-2xl shadow-brutal-sm">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <h3 class="font-display text-xl font-bold">教育与咨询</h3>
+            <p class="mt-2 text-sm font-medium text-neutral-800">面试辅导、职业规划、技能培训。</p>
+            <p class="mt-4 text-xs font-bold uppercase tracking-wider text-neutral-600">均价 ¥150 起</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section id="how" class="border-b-4 border-black bg-lime-200 px-4 py-16 md:py-20">
+      <div class="mx-auto max-w-6xl">
+        <h2 class="font-display mb-12 text-center text-3xl font-black md:text-5xl">如何接单</h2>
+        <div class="grid gap-8 md:grid-cols-3">
+          <div class="relative rounded border-4 border-black bg-white p-8 shadow-brutal">
+            <span class="font-display absolute -left-2 -top-4 flex h-12 w-12 items-center justify-center border-4 border-black bg-fuchsia-400 text-xl font-black">1</span>
+            <h3 class="font-display mt-4 text-xl font-bold"><i class="fa-solid fa-user-plus mr-2 text-fuchsia-600"></i>完善档案</h3>
+            <p class="mt-3 font-medium text-neutral-700">上传作品集、标注擅长领域与报价区间。</p>
+          </div>
+          <div class="relative rounded border-4 border-black bg-white p-8 shadow-brutal">
+            <span class="font-display absolute -left-2 -top-4 flex h-12 w-12 items-center justify-center border-4 border-black bg-cyan-400 text-xl font-black">2</span>
+            <h3 class="font-display mt-4 text-xl font-bold"><i class="fa-solid fa-handshake mr-2 text-cyan-600"></i>匹配沟通</h3>
+            <p class="mt-3 font-medium text-neutral-700">系统推荐需求，与雇主在线沟通确认细节。</p>
+          </div>
+          <div class="relative rounded border-4 border-black bg-white p-8 shadow-brutal">
+            <span class="font-display absolute -left-2 -top-4 flex h-12 w-12 items-center justify-center border-4 border-black bg-amber-400 text-xl font-black">3</span>
+            <h3 class="font-display mt-4 text-xl font-bold"><i class="fa-solid fa-shield-halved mr-2 text-amber-600"></i>交付收款</h3>
+            <p class="mt-3 font-medium text-neutral-700">里程碑验收，资金托管，满意后自动打款。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section id="cta" class="border-b-4 border-black bg-neutral-900 px-4 py-16 text-white md:py-20">
+      <div class="mx-auto max-w-4xl text-center">
+        <h2 class="font-display text-3xl font-black md:text-5xl">准备好接单了吗？</h2>
+        <p class="mt-4 text-lg font-medium text-neutral-300">留下邮箱，我们会发送入驻指引与最新高单价需求清单。</p>
+        <form class="mt-10 flex max-w-xl flex-col gap-4 sm:flex-row sm:items-stretch mx-auto" action="#" method="post">
+          <label class="sr-only" for="email">邮箱</label>
+          <input id="email" name="email" type="email" required placeholder="your@email.com" class="flex-1 rounded border-4 border-white bg-neutral-800 px-5 py-4 font-medium text-white placeholder:text-neutral-500 focus:outline-none focus:ring-4 focus:ring-lime-400" />
+          <button type="submit" class="rounded border-4 border-black bg-lime-400 px-8 py-4 font-bold text-black shadow-brutal transition hover:bg-lime-300">
+            <i class="fa-solid fa-envelope mr-2"></i>立即加入
+          </button>
+        </form>
+        <p class="mt-6 text-sm text-neutral-500">提交即表示同意服务条款与隐私政策（演示页面无后端）。</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t-4 border-black bg-amber-200 px-4 py-10">
+    <div class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-6 md:flex-row">
+      <div class="flex items-center gap-2 font-display text-lg font-bold">
+        <span class="flex h-9 w-9 items-center justify-center border-2 border-black bg-white"><i class="fa-solid fa-bolt"></i></span>
+        接单侠 © 2026
+      </div>
+      <div class="flex flex-wrap justify-center gap-4 text-sm font-semibold">
+        <a href="about.html" class="underline decoration-4 underline-offset-4 hover:text-fuchsia-700">关于我们</a>
+        <a href="#" class="underline decoration-4 underline-offset-4 hover:text-fuchsia-700">帮助中心</a>
+        <a href="#" class="underline decoration-4 underline-offset-4 hover:text-fuchsia-700">联系客服</a>
+      </div>
+      <div class="flex gap-3">
+        <a href="#" class="flex h-10 w-10 items-center justify-center border-2 border-black bg-white shadow-brutal-sm hover:bg-neutral-100" aria-label="微信"><i class="fa-brands fa-weixin"></i></a>
+        <a href="#" class="flex h-10 w-10 items-center justify-center border-2 border-black bg-white shadow-brutal-sm hover:bg-neutral-100" aria-label="微博"><i class="fa-brands fa-weibo"></i></a>
+        <a href="#" class="flex h-10 w-10 items-center justify-center border-2 border-black bg-white shadow-brutal-sm hover:bg-neutral-100" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

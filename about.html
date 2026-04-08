@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>关于我们 · 接单侠</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['"Space Grotesk"', 'system-ui', 'sans-serif'],
+            body: ['"Noto Sans SC"', 'system-ui', 'sans-serif'],
+          },
+          boxShadow: {
+            brutal: '6px 6px 0 0 #000',
+            'brutal-sm': '4px 4px 0 0 #000',
+            'brutal-lg': '8px 8px 0 0 #000',
+          },
+        },
+      },
+    };
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;600;700;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    body { font-family: 'Noto Sans SC', system-ui, sans-serif; }
+    .font-display { font-family: 'Space Grotesk', 'Noto Sans SC', sans-serif; }
+  </style>
+</head>
+<body class="min-h-screen bg-amber-100 text-neutral-900 antialiased">
+  <header class="sticky top-0 z-50 border-b-4 border-black bg-lime-300">
+    <div class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 px-4 py-4 md:px-6">
+      <a href="index.html" class="font-display flex items-center gap-2 text-xl font-bold tracking-tight md:text-2xl">
+        <span class="flex h-10 w-10 items-center justify-center border-4 border-black bg-fuchsia-400 shadow-brutal-sm">
+          <i class="fa-solid fa-bolt text-black"></i>
+        </span>
+        接单侠
+      </a>
+      <nav class="flex flex-wrap items-center gap-2 md:gap-3">
+        <a href="index.html" class="rounded border-2 border-black bg-white px-4 py-2 text-sm font-semibold shadow-brutal-sm transition hover:-translate-y-0.5 hover:bg-amber-200">首页</a>
+        <a href="index.html#skills" class="rounded border-2 border-black bg-white px-4 py-2 text-sm font-semibold shadow-brutal-sm transition hover:-translate-y-0.5 hover:bg-amber-200">技能分类</a>
+        <a href="about.html" class="rounded border-2 border-black bg-cyan-300 px-4 py-2 text-sm font-semibold shadow-brutal-sm transition hover:-translate-y-0.5 hover:bg-cyan-200">关于我们</a>
+        <a href="index.html#cta" class="rounded border-2 border-black bg-fuchsia-400 px-4 py-2 text-sm font-bold shadow-brutal-sm transition hover:-translate-y-0.5 hover:bg-fuchsia-300">
+          <i class="fa-solid fa-paper-plane mr-1"></i>发布需求
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="border-b-4 border-black bg-gradient-to-r from-fuchsia-300 via-amber-200 to-cyan-300 px-4 py-14 md:py-20">
+      <div class="mx-auto max-w-6xl">
+        <p class="mb-4 inline-block rounded-full border-2 border-black bg-white px-4 py-1 text-sm font-bold shadow-brutal-sm">
+          <i class="fa-solid fa-heart text-red-500"></i> 我们的故事
+        </p>
+        <h1 class="font-display max-w-3xl text-4xl font-black leading-tight md:text-6xl">关于 <span class="bg-black px-2 text-lime-300">接单侠</span></h1>
+        <p class="mt-6 max-w-2xl text-lg font-medium text-neutral-800 md:text-xl">
+          我们相信：每一份技能都值得被认真对待，每一次合作都该简单、透明、有保障。
+        </p>
+      </div>
+    </section>
+
+    <section class="border-b-4 border-black bg-white px-4 py-16 md:py-20">
+      <div class="mx-auto grid max-w-6xl gap-12 lg:grid-cols-2 lg:items-center">
+        <div>
+          <h2 class="font-display text-3xl font-black md:text-4xl">使命与愿景</h2>
+          <p class="mt-6 text-base font-medium leading-relaxed text-neutral-700">
+            接单侠诞生于一群自由职业者与创业者的共同痛点：找单难、沟通碎、回款慢。我们搭建了一个以「技能」为核心的撮合与担保平台，用清晰的流程与粗粝却真诚的产品气质，连接需求方与达人。
+          </p>
+          <p class="mt-4 text-base font-medium leading-relaxed text-neutral-700">
+            愿景很简单——<strong class="border-b-4 border-lime-400">让会做事的人，少绕弯路多赚钱。</strong>
+          </p>
+          <ul class="mt-8 space-y-4">
+            <li class="flex gap-4 rounded border-4 border-black bg-lime-100 p-4 shadow-brutal-sm">
+              <span class="flex h-12 w-12 shrink-0 items-center justify-center border-2 border-black bg-lime-400"><i class="fa-solid fa-bullseye text-xl"></i></span>
+              <div>
+                <p class="font-display font-bold">使命</p>
+                <p class="text-sm font-medium text-neutral-700">降低技能变现门槛，提升交易信任度。</p>
+              </div>
+            </li>
+            <li class="flex gap-4 rounded border-4 border-black bg-cyan-100 p-4 shadow-brutal-sm">
+              <span class="flex h-12 w-12 shrink-0 items-center justify-center border-2 border-black bg-cyan-400"><i class="fa-solid fa-eye text-xl"></i></span>
+              <div>
+                <p class="font-display font-bold">愿景</p>
+                <p class="text-sm font-medium text-neutral-700">成为中文圈最「好懂、好用」的技能接单社区。</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="relative">
+          <div class="aspect-square max-w-md rounded border-4 border-black bg-fuchsia-200 shadow-brutal-lg mx-auto flex flex-col items-center justify-center p-8 text-center">
+            <i class="fa-solid fa-users text-7xl text-neutral-800 mb-4"></i>
+            <p class="font-display text-2xl font-black">团队小而硬</p>
+            <p class="mt-2 font-medium text-neutral-800">产品 · 设计 · 风控 · 客服，全员一线听用户。</p>
+          </div>
+          <div class="absolute -bottom-4 -right-4 hidden h-24 w-24 border-4 border-black bg-amber-300 shadow-brutal md:block"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="border-b-4 border-black bg-violet-200 px-4 py-16 md:py-20">
+      <div class="mx-auto max-w-6xl">
+        <h2 class="font-display mb-12 text-center text-3xl font-black md:text-5xl">价值观</h2>
+        <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div class="rounded border-4 border-black bg-white p-6 text-center shadow-brutal">
+            <i class="fa-solid fa-scale-balanced mb-4 text-4xl text-violet-700"></i>
+            <h3 class="font-display text-lg font-bold">公平透明</h3>
+            <p class="mt-2 text-sm font-medium text-neutral-600">规则写清楚，不搞暗箱。</p>
+          </div>
+          <div class="rounded border-4 border-black bg-white p-6 text-center shadow-brutal">
+            <i class="fa-solid fa-shield-heart mb-4 text-4xl text-rose-600"></i>
+            <h3 class="font-display text-lg font-bold">安全优先</h3>
+            <p class="mt-2 text-sm font-medium text-neutral-600">托管与纠纷机制护住双方。</p>
+          </div>
+          <div class="rounded border-4 border-black bg-white p-6 text-center shadow-brutal">
+            <i class="fa-solid fa-comments mb-4 text-4xl text-cyan-700"></i>
+            <h3 class="font-display text-lg font-bold">尊重沟通</h3>
+            <p class="mt-2 text-sm font-medium text-neutral-600">高效反馈，拒绝已读不回。</p>
+          </div>
+          <div class="rounded border-4 border-black bg-white p-6 text-center shadow-brutal">
+            <i class="fa-solid fa-seedling mb-4 text-4xl text-lime-700"></i>
+            <h3 class="font-display text-lg font-bold">长期主义</h3>
+            <p class="mt-2 text-sm font-medium text-neutral-600">口碑比短期 GMV 更重要。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="border-b-4 border-black bg-amber-200 px-4 py-16 md:py-20">
+      <div class="mx-auto max-w-3xl text-center">
+        <h2 class="font-display text-3xl font-black md:text-4xl">联系我们</h2>
+        <p class="mt-4 font-medium text-neutral-800">商务合作、媒体采访或产品建议，欢迎来信。</p>
+        <div class="mt-10 flex flex-col gap-4 sm:flex-row sm:justify-center">
+          <a href="mailto:hello@jiedanxia.demo" class="inline-flex items-center justify-center gap-2 rounded border-4 border-black bg-white px-8 py-4 font-bold shadow-brutal transition hover:-translate-y-1">
+            <i class="fa-solid fa-envelope"></i> hello@jiedanxia.demo
+          </a>
+          <a href="index.html" class="inline-flex items-center justify-center gap-2 rounded border-4 border-black bg-lime-400 px-8 py-4 font-bold shadow-brutal transition hover:-translate-y-1">
+            <i class="fa-solid fa-arrow-left"></i> 返回首页
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t-4 border-black bg-neutral-900 px-4 py-10 text-white">
+    <div class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-6 md:flex-row">
+      <div class="flex items-center gap-2 font-display text-lg font-bold">
+        <span class="flex h-9 w-9 items-center justify-center border-2 border-white bg-fuchsia-500"><i class="fa-solid fa-bolt"></i></span>
+        接单侠 © 2026
+      </div>
+      <p class="text-center text-sm font-medium text-neutral-400">演示站点 · 无真实后端与支付</p>
+      <div class="flex gap-3">
+        <a href="#" class="flex h-10 w-10 items-center justify-center border-2 border-white hover:bg-white hover:text-black" aria-label="微信"><i class="fa-brands fa-weixin"></i></a>
+        <a href="#" class="flex h-10 w-10 items-center justify-center border-2 border-white hover:bg-white hover:text-black" aria-label="微博"><i class="fa-brands fa-weibo"></i></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
